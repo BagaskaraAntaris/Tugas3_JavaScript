@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<script language="JavaScript">
+	function tes() {
+		var val1 = document.kirim.t1.value
+		if (val1%2==0) {
+			document.kirim.t2. value = "Bilangan Genap" //Jika Nilai val1 mod 2 sama dengan 0 
+		}else{
+			document.kirim.t2. value = "Bilangan Ganjil" //Jika Hasil val1 mod 2 tidak 0
+		}
+	}
+</script>
+<body>
+	<form method="POST" name="kirim">
+		<!-- Input nilai -->
+		<p>
+			Bilangan 
+			<input type="text" name="t1" size="20"> Merupakan Bilangan 
+			<input type="text" name="t2" size="20">
+		</p>
+		<!-- Button untuk memanggil js -->
+		<p>
+			<input type="button" name="b1" value="Tebak" onclick= tes()>
+		</p>
+	</form>
+</body>
+</html>
